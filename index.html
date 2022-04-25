@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>So you wanna throw kicks</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@1,300&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+
+    <body>
+        <header>
+            <p>So you wanna throw kicks</p>
+        </header>
+        <div class="new">
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="footage">
+                    <label for="footage">Enable real fighting footage</label>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="choice">Choose your target!</div>
+            <div class="weapons">
+                <input id="head" class="head buttons" src="assets/35555.png" type="image">
+                <input id="body" class="body buttons" src="assets/596432_torso_512x512.png"
+                    type="image">
+                <input id="leg" class="leg buttons" src="assets/leg_5062.png" type="image">
+            </div>
+            <div class="scores">
+                <div class="land">
+                    <div class="landed">Kicks Landed</div>
+                    <div id="lScore" class="landedScore">?</div>
+                </div>
+                <div class="play">
+                    <img id="shot" src="" alt="">
+                </div>
+                <div class="block">
+                    <div class="blocked">Kicks Checked</div>
+                    <div id="cScore" class="checkedScore">?</div>
+                </div>
+            </div>
+            <div id="roundResult"></div>
+        </div>
+        <div id="overlay">
+            <div id="end">
+                <p id="result"></p>
+                <input type="button" id="playAgain" value="Play Again">
+                <div id="overlay"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>
+                Copyright ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                kareemgamaal
+                <a href="https://github.com/kareemgamal1" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+
+</html>
